@@ -8,7 +8,7 @@ import WordPredictor from "@site/src/utils/WordPredictor/predict";
 
 function PredictionInput({onPrediction, onChange}: {
     onChange?: (text: string) => void,
-    onPrediction?: (prediction: Array<{word: string, probability: number}>, text: string) => void
+    onPrediction?: (prediction: Array<{word: string, confidence: number}>, text: string) => void
 }) {
 
     const [sl, setSL] = useState(5);

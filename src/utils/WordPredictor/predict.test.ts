@@ -26,7 +26,7 @@ describe('predictNextWords', () => {
         const out = new WordPredictor(model, tokenizer);
         const mit = await out.predict("Möge die Macht");
         expect(mit[0].word).toBe("mit");
-        expect(mit[0].probability).toBeGreaterThan(0.9);
+        expect(mit[0].confidence).toBeGreaterThan(0.9);
 
         const dir = await out.predict("Möge die Macht mit");
         expect(dir[0].word).toBe("dir");
@@ -45,7 +45,7 @@ describe('predictNextWords', () => {
         const out = new WordPredictor(model, tokenizer, 5);
         const mit = await out.predict("Möge die Macht");
         expect(mit[0].word).toBe("mit");
-        expect(mit[0].probability).toBeGreaterThan(0.9);
+        expect(mit[0].confidence).toBeGreaterThan(0.9);
 
         const dir = await out.predict("Möge die Macht mit");
         expect(dir[0].word).toBe("euch");

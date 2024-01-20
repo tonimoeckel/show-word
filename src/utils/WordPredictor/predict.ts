@@ -42,7 +42,7 @@ class WordPredictor {
         let predictions = [];
         for (let i = 0; i < indices.length; i++) {
             let predictedWord = this.getIndexWord(indices[i]);
-            predictions.push({ word: predictedWord, probability: probabilities[i] });
+            predictions.push({ word: predictedWord, confidence: probabilities[i] });
         }
 
 

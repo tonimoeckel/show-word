@@ -19,7 +19,7 @@ function PredictionDemo() {
   const [latestPrediction, setLatestPrediction] = useState<{
       predictions: Array<{
         word: string,
-        probability: number
+        confidence: number
       }>,
       text: string
   }>(undefined);
@@ -71,7 +71,7 @@ function PredictionDemo() {
                         </Prompt>
                     </Col>
                 </Row>
-              </> : <PredictionAnalyse predictions={latestPrediction.predictions} /> }
+              </> : <PredictionAnalyse classificationResult={latestPrediction.predictions} text={latestPrediction.text} /> }
 
           </main>
       </>
