@@ -1,0 +1,7 @@
+.prompt {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: var(--ifm-color-primary-lightest);
+    font-style: italic;
+    color: var(--ifm-white-color);
+}
