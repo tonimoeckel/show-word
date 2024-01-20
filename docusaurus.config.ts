@@ -64,10 +64,10 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/tonimoeckel/show-word',
           label: 'GitHub',
           position: 'right',
         },
@@ -77,18 +77,21 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Funktionsweise',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Intro',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Sources',
+          title: 'Dokumentation',
           items: [
-
+            {
+              label: 'Modell',
+              to: '/docs/model',
+            }
           ],
         },
         {
@@ -96,7 +99,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/tonimoeckel/show-word',
             },
           ],
         },
