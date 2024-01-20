@@ -10,7 +10,11 @@ function PredictionAnalyse(props: {
     text: string
 }) {
     return (
-        <ClassificationResultCharts classificationResult={props.classificationResult}/>
+        <>
+            <h4>Eingabe: {props.text}</h4>
+            <ClassificationResultCharts classificationResult={props.classificationResult}/>
+        </>
+
     );
 }
 
